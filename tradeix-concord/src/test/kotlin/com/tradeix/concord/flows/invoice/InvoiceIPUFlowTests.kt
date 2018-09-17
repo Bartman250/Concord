@@ -111,7 +111,6 @@ class InvoiceIPUFlowTests : AbstractFlowTest() {
     IssueWithSpecificNotary("BootstrapNotary")
   }
 
-
   private fun IssueWithSpecificNotary(notaryOrganisationName: String) {
     System.setProperty(FlowHelper.BNO_SELECTED_NOTARY_ORGANISATION_NAME, notaryOrganisationName)
     issueInvoice()
